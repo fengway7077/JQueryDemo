@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           // ////each
+           // var result = [];
+           //  $('li').each(function (index, elemet) {
+           //result.push($(elemet).text()); 
+           //       }); 
+           //  alert(result);
+
+          //  ////map  cho ket qua giong each
+          //alert ($('li').map(function (index, elemet) {
+          //      return $(elemet).text();
+          //  }).get());
+
+            //////CHEN-CAT:EACH
+            // var result = [];//chen chuoi-CAT
+            //  $('li').each(function (index, elemet) {
+            // result += $(elemet).text() + "|"; //CHEN
+            //  });
+            //  result = result.substr(0, result.length - 1);//CAT CHUOI 
+            //  alert(result);
+
+            //
+            alert( $('li').map(function (index, elemet) {
+                if($(elemet).text() == 'PHP')//NEU KT=PHP RETURN
+                return $(elemet).text();
+           }).get().join('|'));//CHEN
+      
+
+       });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>PHP</li>
+         <li>JAVA</li>
+        <li>c++</li>
+        <li>C#</li>
+    
+    </ul>
+</body>
+</html>

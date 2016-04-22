@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //mang
+            var employeeJson = [{
+                "firstname": "NO NAME",
+                "lastName": "App",
+                "email ": "abc@gmail.com",
+                "age": 14
+            }, {
+                "firstname": "Linh",
+                "lastName": "Tran",
+                "email ": "def@gmail.com",
+                "age": 123
+            }
+            ];
+            ////vong lap 
+            var result = '';
+            $.each($(employeeJson),function (i,item) {
+                result += "firsrtname :" + item.firstname + " /  lastName :" + item.lastName + "<br>";
+            });
+            $('#result').html(result);
+          });
+    </script>
+</head>
+<body>
+    <div id="result">  </div>
+</body>
+</html>

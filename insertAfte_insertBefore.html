@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script> 
+        $(document).ready(function () {
+            //   $('<h3> Tutorial insert Before </h3>').insertBefore('div');//truoc moit the div insert
+            $('div').before('<h3> Tutorial insert Before </h3>');//ket qua giong hang tren
+
+            // $('<h3> Tutorial insert After </h3>').insertAfter('div');
+            $('div').after('<h3> Tutorial insert After </h3>');//ket qua giong hang tren
+        });
+    </script>
+</head>
+<body>
+    <div>Jquery </div>
+    <div>C# </div>
+    <div>Java </div>
+    <div>PHP </div>
+</body>
+</html>
